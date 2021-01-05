@@ -1,2 +1,12 @@
-<h1>{{title}}</h1>
-<img [src]="url" [alt]="description">
+
+<!-- inbound properties -->
+
+<!--
+<ap-photo description="Leão" url="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Sultan_the_Barbary_Lion.jpg/440px-Sultan_the_Barbary_Lion.jpg"></ap-photo>
+<ap-photo description="Leão Colorido" url="https://www.goway.com/media/cache/aa/79/aa79264f49aae4d4b2d77f0abdeb16fc.jpg"></ap-photo>
+-->
+
+<!-- usando diretiva para iterar sobre array de fotos -->
+
+<ap-photo *ngFor="let photo of photos" [url]="photo.url" [description]="photo.description"></ap-photo>
+
