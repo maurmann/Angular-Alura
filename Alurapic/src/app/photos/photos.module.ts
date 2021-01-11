@@ -6,12 +6,13 @@ import { PhotoListComponent } from './photo-list/photo-list.component';
 import { PhotoFormComponent } from './photo-form/photo-form.component';
 import { PhotosComponent } from './photo-list/photos/photos.component';
 import { FilterByDescription } from './photo-list/filter-by-description.pipe';
+import { LoadButtonComponent } from './photo-list/load-button/load-button.component';
 
 @NgModule({
     declarations: [
         PhotoComponent, 
         PhotoListComponent, 
-        PhotoFormComponent, PhotosComponent ,FilterByDescription],
+        PhotoFormComponent, PhotosComponent ,FilterByDescription, LoadButtonComponent],
 
     // CommomModule possui as diretivas, que também sao referenciadas em BrowserModule,
     // como BrowserModulo nao pode ser instanciado em outros modulos alem do modulo principal aqui 
